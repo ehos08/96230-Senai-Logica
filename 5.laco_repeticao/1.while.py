@@ -19,8 +19,8 @@ while True:
     print("Repetindo...")
     contador += 1
     continua = input("Tecle 's' se deseja continuar.\n").strip().lower()
-if contador == 0:
-    print("O bloco NÃO foi repetido.")
+    if contador == 0:
+     print("O bloco NÃO foi repetido.")
 
-if contador == 3:
+    if contador == 3:
     

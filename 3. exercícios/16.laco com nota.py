@@ -5,7 +5,7 @@ print("\t\tCalcule sua média\n")
 nota = 0
 contador = 0
 while True:
-    nota += float(input("Digite sua nota: "))
+    nota += float(input("Digite sua  nota: "))
     if nota < 0 or nota > 10:
         print("formato de nota inválido!")
     notas = (input("você deseja adicionar mais uma nota? ('S' ou 'N') "))

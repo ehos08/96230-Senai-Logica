@@ -12,4 +12,4 @@ while True:
          print("Acesso negado.")
         else:
          break
-print("programa encerrado.")
+        print("programa encerrado.")
