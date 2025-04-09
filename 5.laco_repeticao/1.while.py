@@ -23,4 +23,5 @@ while True:
      print("O bloco NÃO foi repetido.")
 
     if contador == 3:
-    
+        print("O bloco foi repetido 3 vezes.")
+        break
