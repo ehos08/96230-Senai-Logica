@@ -1,9 +1,9 @@
 import os 
 os.system("cls||clear")
+
 def calculo_imc(peso, altura):
     """Calcula o IMC dado o peso e a altura."""
     return peso / (altura ** 2)
-
 def classificar_imc(imc):
     """Classifica o IMC em categorias."""
     if imc < 18.5:
@@ -18,7 +18,6 @@ def classificar_imc(imc):
         return "Obesidade Grau 2"
     else:
         return "Obesidade Grau 3"
-
 
 peso = float(input("Digite o seu peso em kg: "))
 altura = float(input("Digite a sua altura em metros: "))

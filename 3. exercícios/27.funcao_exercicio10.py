@@ -1,5 +1,6 @@
 import os
 os.system("cls||clear")
+
 nota = 0
 QUANTIDADE = 2
 for i in range(1,QUANTIDADE + 1):
