@@ -5,7 +5,7 @@ contador_impar = 0
 contador_par = 0
 list = []
 for e in range(1,7):
- numeros = int(input(f"Informe o {e} número: "))
+ numeros = int(input(f"Informe o {e}º número: "))
  list.append(numeros)
 
  if numeros % 2 == 0:
@@ -15,4 +15,3 @@ for e in range(1,7):
 print(f"\nQuantidade total de números: {list} ")
 print(f"Quantidade de números pares informados: {contador_par}.\n\t")
 print(f"Quantidade de números ímpares informados: {contador_impar}.\n\t")
-

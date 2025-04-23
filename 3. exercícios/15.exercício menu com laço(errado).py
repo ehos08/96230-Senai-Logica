@@ -11,20 +11,9 @@ Código\t\t Prato \t\t\t valor
 
 \nDigite a opção desejada:                                                                                      
 """))
-laco = (input("Você deseja pedir mais alguma coisa?(Sim ou Não)\n")).lower()
+
 soma = 0.0
 while True:
-    opcao = int(input(""" 
-    Código\t\t Prato \t\t\t valor
-    1 \t\t Picanha \t\t R$ 44,90 
-    2  \t\t Lasanha \t\t R$ 25,38
-    3 \t\t Strogonoff \t\t R$ 17,60
-    4 \t\t Bisteca acebolada \t R$ 13,70
-    5 \t\t Misto \t\t\t R$ 5,00 
-
-    \nDigite a opção desejada:                                                                                      
-    """))
-    laco = (input("Você deseja pedir mais alguma coisa?(Sim ou Não)\n")).lower()
     match opcao:
         case 1:
             produto = 44.90
@@ -45,7 +34,7 @@ while True:
                 print("inválido")
     laco = (input("Você deseja pedir mais alguma coisa?(Sim ou Não)\n")).lower()
     soma += produto 
-    if laco == "não":
+    if laco == "não" or "nao":
      break
 print(f"O total é {soma}")
 
