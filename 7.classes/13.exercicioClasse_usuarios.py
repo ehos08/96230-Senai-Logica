@@ -18,15 +18,14 @@ class usuario:
 for i in range(QUANTIDADE_USUARIOS):
 
     cadastrado = usuario(
-                        nome = input("Digite seu nome: "), 
-                        nascimento = input("Digite a sua data de nascimento (DDMMAAAA): "),
-                        RG = input("Digite o seu RG: "),
-                        CPF = float(input("Digite o seu CPF: "))
-                        
+                        nome = input(f"Digite o {i+1}º nome: "), 
+                        nascimento = input(f"Digite a {i+1}ºdata de nascimento (DD/MM/AAAA): "),
+                        RG = input(f"Digite o {i+1}º RG: "),
+                        CPF = float(input(f"Digite o {i+1}º CPF: "))
                              )
     usuarios.append(cadastrado)
     
-
+#salvando arquivo em .txt
 nome_arquivo = "Usuários.txt"
 with open(nome_arquivo, "a") as arquivo_cadastro:
     for cadastrado in usuarios:
@@ -38,3 +37,4 @@ try:
             print(f"{linha.strip()}")
 except FileExistsError:
     print("Arquivo não encontrado.")
+#==================================================================================================================

@@ -30,7 +30,7 @@ print("Exibindo dados:")
 for cadastrado in funcionarios :
    cadastrado.exibir_dados()
 
-nome_arquivo = "Funcuinários.txt"
+nome_arquivo = "Funcionários.txt"
 with open(nome_arquivo, "a") as arquivo_cadastro:
     for cadastrado in funcionarios:
         arquivo_cadastro.write(f"{cadastrado.nome}, {cadastrado.nascimento}, {cadastrado.RG}, {cadastrado.CPF}\n")
